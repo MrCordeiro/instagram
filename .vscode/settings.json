@@ -1,0 +1,28 @@
+{
+    "prettier.printWidth": 88,
+    "editor.tabSize": 2,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "eslint.validate": [
+        "javascript"
+    ],
+    "workbench.colorCustomizations": {
+        "activityBar.activeBackground": "#db60f1",
+        "activityBar.activeBorder": "#f0d74f",
+        "activityBar.background": "#db60f1",
+        "activityBar.foreground": "#15202b",
+        "activityBar.inactiveForeground": "#15202b99",
+        "activityBarBadge.background": "#f0d74f",
+        "activityBarBadge.foreground": "#15202b",
+        "statusBar.background": "#d131ed",
+        "statusBar.foreground": "#e7e7e7",
+        "statusBarItem.hoverBackground": "#db60f1",
+        "titleBar.activeBackground": "#d131ed",
+        "titleBar.activeForeground": "#e7e7e7",
+        "titleBar.inactiveBackground": "#d131ed99",
+        "titleBar.inactiveForeground": "#e7e7e799"
+    },
+    "peacock.color": "#d131ed",
+    "files.eol": "\n"
+}
