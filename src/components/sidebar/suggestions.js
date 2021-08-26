@@ -18,7 +18,7 @@ export default function Suggestions({ userId, following, loggedInUserDocId }) {
     if (userId) {
       suggestedProfiles();
     }
-  }, [userId]); // Run this useEffect whenver the userId changes
+  }, [userId]); // Run this useEffect whenever the userId changes
 
   return !profiles ? (
     <Skeleton count={5} height={35} className="mt-5" />
