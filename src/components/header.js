@@ -4,10 +4,12 @@ import FirebaseContext from "../context/firebase";
 import UserContext from "../context/user";
 import * as ROUTES from "../constants/routes";
 import { DEFAULT_IMAGE_PATH } from "../constants/paths";
+import useUser from "../hooks/use-user";
 
 export default function Header() {
+  const { user: loggedInUser } = useContext(UserContext);
+  const { user } = useUser(loggedInUser?.uid);
   const { firebase } = useContext(FirebaseContext);
-  const { user } = useContext(UserContext);
   const history = useHistory();
 
   return (
@@ -26,7 +28,7 @@ export default function Header() {
             </h1>
           </div>
           <div className="text-gray-700 text-center flex items-center align-items">
-            {user ? (
+            {loggedInUser ? (
               <>
                 <Link to={ROUTES.DASHBOARD} aria-label="Dashboard">
                   <svg
