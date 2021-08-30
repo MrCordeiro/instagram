@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { getPhotos } from "../services/firebase";
-// import getPhotos from "../services/firebase";
 
 export default function usePhotos(user) {
   const [photos, setPhotos] = useState(null);
